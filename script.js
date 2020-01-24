@@ -1,31 +1,75 @@
 $(document).ready(function() {
  
+// make <p> red when clicked
 
- 	$("#stream1_btn").on("click", function() {
- 		$(".stream1").removeClass('highlight_stream');
-		$(".stream2").removeClass('highlight_stream');
-		$(".stream3").removeClass('highlight_stream');
-	  	$(".stream1").addClass('highlight_stream');
-	});
-	$("#stream2_btn").on("click", function() {
-		$(".stream1").removeClass('highlight_stream');
-		$(".stream2").removeClass('highlight_stream');
-		$(".stream3").removeClass('highlight_stream');
-	  	$(".stream2").addClass('highlight_stream');
-	});
-	$("#stream3_btn").on("click", function() {
-		$(".stream1").removeClass('highlight_stream');
-		$(".stream2").removeClass('highlight_stream');
-		$(".stream3").removeClass('highlight_stream');
-	  	$(".stream3").addClass('highlight_stream');
-	});
-    $("p").on("click", function() {
-        $("p").addClass('p-red');
+    $('p').on('click', function() {
+        $('p').css('color', 'red');
     });
-    $("h2").mouseenter(function() {
-        $("h2").addClass('background-color', lightblue);
+
+// give <h2> a background color lightblue when hovered
+
+    $('h2').hover(function() {
+        $('h2').css('background-color', 'lightblue');
     })
-    $("h2").mouseleave(function() {
-        $("h2").removeClass('background-color', lightblue);
+
+// changing font sizes of only the clicked <h2> elements
+
+    $('#head_HTML').hover(function(){
+        $('#head_HTML').css('font-size', '1.5em');
+        $('#head_MySql').css('font-size', '1em');
+        $('#head_Python').css('font-size', '1em');
+        $('#head_jQuery').css('font-size', '1em');
+        $('#head_Django').css('font-size', '1em');
+        $('#head_CSS').css('font-size', '1em');
     })
+    $('#head_MySql').hover(function(){
+        $('#head_HTML').css('font-size', '1em');
+        $('#head_MySql').css('font-size', '1.5em');
+        $('#head_Python').css('font-size', '1em');
+        $('#head_jQuery').css('font-size', '1em');
+        $('#head_Django').css('font-size', '1em');
+        $('#head_CSS').css('font-size', '1em');
+    })
+    $('#head_Python').hover(function(){
+        $('#head_HTML').css('font-size', '1em');
+        $('#head_MySql').css('font-size', '1em');
+        $('#head_Python').css('font-size', '1.5em');
+        $('#head_jQuery').css('font-size', '1em');
+        $('#head_Django').css('font-size', '1em');
+        $('#head_CSS').css('font-size', '1em');
+    })
+    $('#head_jQuery').hover(function(){
+        $('#head_HTML').css('font-size', '1em');
+        $('#head_MySql').css('font-size', '1em');
+        $('#head_Python').css('font-size', '1em');
+        $('#head_jQuery').css('font-size', '1.5em');
+        $('#head_Django').css('font-size', '1em');
+        $('#head_CSS').css('font-size', '1em');
+    })
+    $('#head_Django').hover(function(){
+        $('#head_HTML').css('font-size', '1em');
+        $('#head_MySql').css('font-size', '1em');
+        $('#head_Python').css('font-size', '1em');
+        $('#head_jQuery').css('font-size', '1em');
+        $('#head_Django').css('font-size', '1.5em');
+        $('#head_CSS').css('font-size', '1em');
+    })
+    $('#head_CSS').hover(function(){
+        $('#head_HTML').css('font-size', '1em');
+        $('#head_MySql').css('font-size', '1em');
+        $('#head_Python').css('font-size', '1em');
+        $('#head_jQuery').css('font-size', '1em');
+        $('#head_Django').css('font-size', '1em');
+        $('#head_CSS').css('font-size', '1.5em');
+    })
+
+// hovering button will make background of the body go black.
+// after hover it'll go grey
+
+    $('.bottom_button').hover(function() {
+        $('body').css('background-color', 'black');
+    });
+    $('.bottom_button').mouseleave(function(){
+        $('body').css('background-color', 'grey');
+    });
 }); 
