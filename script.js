@@ -22,4 +22,10 @@ $(document).ready(function() {
     $("p").on("click", function() {
         $("p").addClass('p-red');
     });
+    $("h2").mouseenter(function() {
+        $("h2").addClass('background-color', lightblue);
+    })
+    $("h2").mouseleave(function() {
+        $("h2").removeClass('background-color', lightblue);
+    })
 }); 
