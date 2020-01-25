@@ -15,3 +15,8 @@ When a button is no longer hovered, the background color of the page turns grey.
 Edit your html file to change all the 'a' tags to 'button' elements. Don’t forget the closing tag and to remove the href attribute. Make the first button hide when clicked.
 
 On the same button, try the slow, medium, fast, and a number in milliseconds (you will need to refresh to get the button back).
+
+### Challenge on toggle
+
+The toggle effect is applied to button number 2 in the HTML file.
+

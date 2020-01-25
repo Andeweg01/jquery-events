@@ -75,5 +75,9 @@ $(document).ready(function() {
 
     $('#button1').click(function(){
         $('#button1').hide('slow');
+    });
+
+    $('#button2').click(function(){
+        $('#par_toggle').toggle();
     })
 }); 
