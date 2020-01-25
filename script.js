@@ -72,4 +72,8 @@ $(document).ready(function() {
     $('.bottom_button').mouseleave(function(){
         $('body').css('background-color', 'grey');
     });
+
+    $('#button1').click(function(){
+        $('#button1').hide('slow');
+    })
 }); 
