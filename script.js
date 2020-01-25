@@ -84,4 +84,11 @@ $(document).ready(function() {
     $('#button3').click(function(){
         $('#par_slidet').slideToggle('medium');
     })
+
+    $('#button4').mouseenter(function(){
+        $('#par_fadeto').fadeTo('medium', 0.5);
+    })
+    $('#button4').mouseleave(function(){
+        $('#par_fadeto').fadeTo('medium', 1);
+    })
 }); 
