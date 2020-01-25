@@ -80,4 +80,8 @@ $(document).ready(function() {
     $('#button2').click(function(){
         $('#par_toggle').toggle();
     })
+
+    $('#button3').click(function(){
+        $('#par_slidet').slideToggle('medium');
+    })
 }); 
